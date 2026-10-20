@@ -76,7 +76,7 @@ VAR t =
 RETURN
     DIVIDE ( MAXX ( t, [r] ) - MINX ( t, [r] ), MINX ( t, [r] ) ) * 100
 
-Peringkat Provinsi (1 = termahal) =
+Peringkat Provinsi =
 RANKX (
     ALL ( dim_provinsi[provinsi] ),
     [Rata-rata Provinsi],
