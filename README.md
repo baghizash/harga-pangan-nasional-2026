@@ -22,6 +22,15 @@ Periode 1 Jan 2025 – 19 Okt 2026, pasar tradisional, harga nasional (Rp/kg):
 
 Seluruh angka dihitung ulang dari `data/raw/*.csv`; detail per komoditas ada di `findings.json`.
 
+## Pratinjau dashboard
+
+![Pratinjau halaman 1 dashboard](powerbi/dashboard_preview_halaman1.png)
+
+Pratinjau tata letak halaman 1 (Ringkasan Nasional) yang dibuat langsung dari
+data asli repo ini. Kit Power BI (star schema, DAX, layout 4 halaman) ada di
+`powerbi/`; GitHub tidak bisa me-render file `.pbix`, jadi pratinjau ini yang
+tampil di halaman repo sampai dashboard-nya selesai dirakit di Power BI Desktop.
+
 ## Struktur repo
 
 ```
