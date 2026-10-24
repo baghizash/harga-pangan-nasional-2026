@@ -68,7 +68,7 @@ PROVINCES = [
     (29, "Sulawesi Utara"), (30, "Sulawesi Barat"), (31, "Maluku"),
     (32, "Maluku Utara"), (33, "Papua"), (34, "Papua Barat"),
 ]
-START, END = "2025-01-01", "2026-10-19"
+START, END = "2025-01-01", "2026-10-23"
 DELAY = 1.2
 
 cj = http.cookiejar.CookieJar()
