@@ -7,9 +7,11 @@ Seluruh data dalam repo ini berasal dari **satu sumber resmi**: API publik
 - **Endpoint**: `GET /hargapangan/WebSite/TabelHarga/GetGridDataKomoditas`
 - **Parameter**: `price_type_id=1` (Pasar Tradisional), `tipe_laporan=1` (harian),
   `showKota=false`, `showPasar=false`, satu `comcat_id` + satu `province_id` per panggilan
-- **Diakses**: 19–20 Oktober 2026 (read-only, tanpa autentikasi)
-- **Periode**: 2025-01-01 s/d 2026-10-19 (API menyimpan data sejak 01/01/2018; periode
+- **Diakses**: 19–20 Oktober 2026, diperbarui 24 Oktober 2026 (read-only, tanpa autentikasi)
+- **Periode**: 2025-01-01 s/d 2026-10-23 (API menyimpan data sejak 01/01/2018; periode
   proyek dibatasi 2025-01-01 sesuai kesepakatan agar sebanding dengan proyek Harga Cabai)
+  Pembaruan 24 Okt 2026 menambah 4 hari laporan (20–23 Okt 2026); 24 Okt 2026
+  jatuh pada hari Sabtu sehingga belum ada laporan PIHPS untuk tanggal itu.
 - **Respons**: `{"data": [baris nasional (level 0), baris provinsi (level 1)]}`,
   satu kolom per tanggal laporan (DD/MM/YYYY); `"-"` = tidak ada laporan hari itu
 
