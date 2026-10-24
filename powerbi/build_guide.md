@@ -15,7 +15,7 @@
 ## 2. Measures (10 menit)
 1. Salin seluruh blok DAX dari `measures_dax.md` ke dalam model (buat dua tabel measure atau gunakan folder display: "Nasional" dan "Provinsi").
 2. Baca bagian "Catatan level" di `measures_dax.md` SEBELUM membuat visual — ini mencegah jebakan grain ganda.
-3. Uji cepat: buat card dengan `Rata-rata Nasional 2026` + slicer Kelompok = Beras → harus **Rp15.983**. Jika beda, cek relasi.
+3. Uji cepat: buat card dengan `Rata-rata Nasional 2026` + slicer Kelompok = Beras → harus **Rp15.990**. Jika beda, cek relasi.
 
 ## 3. Bangun 4 halaman (30–45 menit)
 Ikuti `dashboard_layout.md` halaman per halaman:
@@ -24,9 +24,9 @@ Ikuti `dashboard_layout.md` halaman per halaman:
 - Halaman 4: gabungan tampilan ringkas + tabel metodologi (ketik manual dari `dashboard_layout.md`).
 
 ## 4. Verifikasi akhir (10 menit)
-- [ ] Halaman 1 KPI: Beras +3,0% / Daging Sapi +6,0% / Minyak Goreng +6,7% / Gula Pasir +2,4%.
+- [ ] Halaman 1 KPI: Beras +3,1% / Daging Sapi +6,0% / Minyak Goreng +6,8% / Gula Pasir +2,4%.
 - [ ] Halaman 2: Minyak Goreng Curah CV 4,3% (tertinggi); puncak 13–14 Okt 2026 tersorot.
-- [ ] Halaman 3: gap Beras 40,2% (NTB vs Kalteng).
+- [ ] Halaman 3: gap Beras 40,3% (NTB vs Kalteng).
 - [ ] Tidak ada visual yang mencampur `fact_nasional` dan `fact_provinsi` dalam satu agregasi.
 - [ ] Simpan sebagai `Harga-Pangan-Nasional-2026.pbix` (file .pbix tidak di-push ke GitHub — GitHub tidak bisa me-render-nya; simpan screenshot dashboard sebagai gantinya bila perlu).
 
