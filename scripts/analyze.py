@@ -15,14 +15,20 @@ ROOT = "/home/hatch/workspace/harga-pangan"
 CHARTS = f"{ROOT}/charts"
 
 plt.rcParams.update({
-    "font.family": "DejaVu Sans",
+    "font.family": "Noto Sans",
     "axes.spines.top": False, "axes.spines.right": False,
-    "axes.grid": True, "grid.alpha": 0.25, "grid.linestyle": "--",
+    "axes.grid": True, "grid.alpha": 0.35, "grid.linestyle": "-",
+    "grid.color": "#CFC6B4", "axes.edgecolor": "#8A8171",
+    "text.color": "#2A1E33", "axes.labelcolor": "#2A1E33",
+    "xtick.color": "#2A1E33", "ytick.color": "#2A1E33",
+    "figure.facecolor": "#F8F2E4", "axes.facecolor": "#F8F2E4",
+    "savefig.facecolor": "#F8F2E4",
     "figure.dpi": 150,
 })
-# Palette: deep teal + warm amber + slate (no purple, no neon)
-PAL = ["#0E7C7B", "#D9A441", "#3A6EA5", "#C1553B", "#5B8C5A", "#8A6FB8"]
-PAL_TEAL = "#0E7C7B"
+# Palette T3 (redesign porto): plum + tangerine di atas permukaan oat.
+# Seri utama = plum, seri penekanan = tangerine, sisanya turunan plum/tangerine.
+PAL = ["#5E2A72", "#EF7D1A", "#8A5CA6", "#2A1E33", "#B08FC4", "#F5A85C"]
+PAL_TEAL = "#5E2A72"
 
 GROUPS = {
     "Beras": ["com_1", "com_2", "com_3", "com_4", "com_5", "com_6"],
@@ -55,7 +61,7 @@ def main():
     nat["tahun"] = nat["tanggal"].dt.year
     prov["tahun"] = prov["tanggal"].dt.year
 
-    findings = {"periode": {"mulai": "2025-01-01", "selesai": "2026-10-19",
+    findings = {"periode": {"mulai": "2025-01-01", "selesai": "2026-10-23",
                             "sumber": "PIHPS / Bank Indonesia (API publik, pasar tradisional, harian)",
                             "komoditas": 13, "provinsi": 34},
                 "kelompok": {}, "komoditas": {}, "provinsi": {},
@@ -167,7 +173,7 @@ def main():
     # 2. YoY per kelompok
     fig, ax = plt.subplots(figsize=(8, 4.4))
     names = list(grp_stats.keys()); vals = [grp_stats[g]["yoy_pct"] for g in names]
-    bars = ax.bar(names, vals, color=[PAL_TEAL if v >= 0 else "#C1553B" for v in vals], width=0.55)
+    bars = ax.bar(names, vals, color=[PAL_TEAL if v >= 0 else "#EF7D1A" for v in vals], width=0.55)
     ax.set_title("Perubahan Harga Rata-rata 2025 ke 2026 per Kelompok (%)", fontsize=13, fontweight="bold", loc="left")
     ax.set_ylabel("Persen (%)")
     for b, v in zip(bars, vals):
@@ -203,9 +209,9 @@ def main():
         st = prov_stats[gname]
         labs = [f"{p}\n({rp(v)})" for p, v in st["top5_murah"]] + [f"{p}\n({rp(v)})" for p, v in st["top5_mahal"]]
         vals = [v for _, v in st["top5_murah"]] + [v for _, v in st["top5_mahal"]]
-        cols = [PAL_TEAL]*5 + ["#C1553B"]*5
+        cols = [PAL_TEAL]*5 + ["#EF7D1A"]*5
         ax.barh(labs, vals, color=cols, height=0.6)
-        ax.set_title(f"{gname} — 5 termurah vs 5 termahal (rata 2026)", fontsize=11, fontweight="bold", loc="left")
+        ax.set_title(f"{gname}: 5 termurah vs 5 termahal (rata 2026)", fontsize=11, fontweight="bold", loc="left")
         ax.xaxis.set_major_formatter(mticker.FuncFormatter(lambda x, _: f"{x/1000:.0f}rb"))
     fig.tight_layout(); fig.savefig(f"{CHARTS}/05_disparitas_provinsi.png", bbox_inches="tight"); plt.close(fig)
 
