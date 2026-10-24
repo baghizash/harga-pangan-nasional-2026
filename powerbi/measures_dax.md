@@ -17,10 +17,10 @@ Relasi: `dim_tanggal[tanggal]` 1—* `fact_nasional[tanggal]`, `dim_komoditas[ko
 
 | Kelompok | Rata-rata 2025 | Rata-rata 2026 | YoY | Puncak (nasional) |
 |---|---|---|---|---|
-| Beras | Rp15.515 | Rp15.983 | +3,0% | Rp16.367 (13 Okt 2026) |
-| Daging Sapi | Rp136.093 | Rp144.214 | +6,0% | Rp148.600 (13 Okt 2026) |
-| Minyak Goreng | Rp20.753 | Rp22.146 | +6,7% | Rp22.850 (13 Okt 2026) |
-| Gula Pasir | Rp19.086 | Rp19.539 | +2,4% | Rp19.950 (13 Okt 2026) |
+| Beras | Rp15.515 | Rp15.990 | +3,1% | Rp16.367 (13 Okt 2026) |
+| Daging Sapi | Rp136.093 | Rp144.290 | +6,0% | Rp148.600 (13 Okt 2026) |
+| Minyak Goreng | Rp20.753 | Rp22.158 | +6,8% | Rp22.850 (13 Okt 2026) |
+| Gula Pasir | Rp19.086 | Rp19.547 | +2,4% | Rp20.000 (21 Okt 2026) |
 
 Visual nasional 2026 WAJIB menampilkan angka di atas. Jika berbeda, cek: visual memakai `fact_nasional` (bukan `fact_provinsi`).
 
@@ -91,4 +91,4 @@ RANKX (
 1. Satu visual = satu tabel fakta. Visual nasional pakai measures NASIONAL; visual provinsi pakai measures PROVINSI.
 2. Slicer Tahun/Komoditas/Kelompok boleh dipakai di kedua jenis visual (relasi via dimensi).
 3. Slicer Provinsi HANYA untuk visual provinsi — jangan pasang di halaman nasional (tidak ada relasi provinsi di `fact_nasional`, slicer akan kosong).
-4. Uji tiap measure pada satu komoditas + satu tahun dulu sebelum membangun halaman penuh (contoh: Beras, 2026 → rata-rata nasional harus Rp15.983).
+4. Uji tiap measure pada satu komoditas + satu tahun dulu sebelum membangun halaman penuh (contoh: Beras, 2026 → rata-rata nasional harus Rp15.990).
