@@ -1,23 +1,23 @@
 # Analisis Harga Pangan Nasional Indonesia 2026
 
-Analisis harga pangan pokok nasional Indonesia periode **1 Januari 2025 sampai 19 Oktober 2026** menggunakan data harian resmi **PIHPS (Pusat Informasi Harga Pangan Strategis) / Bank Indonesia** — pasar tradisional, 13 komoditas pangan, 34 provinsi.
+Analisis harga pangan pokok nasional Indonesia periode **1 Januari 2025 sampai 23 Oktober 2026** menggunakan data harian resmi **PIHPS (Pusat Informasi Harga Pangan Strategis) / Bank Indonesia** — pasar tradisional, 13 komoditas pangan, 34 provinsi.
 
-> **Sumber data:** API publik PIHPS/BI (`bi.go.id/hargapangan`), diakses 2026-10-19/20. Data diambil langsung (read-only, tanpa API key) lewat `scripts/fetch_pihps.py`. Tidak ada dataset pihak ketiga yang disalin.
+> **Sumber data:** API publik PIHPS/BI (`bi.go.id/hargapangan`), diakses 2026-10-19/20, diperbarui 2026-10-24. Data diambil langsung (read-only, tanpa API key) lewat `scripts/fetch_pihps.py`. Tidak ada dataset pihak ketiga yang disalin.
 
 ## Ringkasan temuan
 
-Periode 1 Jan 2025 – 19 Okt 2026, pasar tradisional, harga nasional (Rp/kg):
+Periode 1 Jan 2025 – 23 Okt 2026, pasar tradisional, harga nasional (Rp/kg):
 
 | Kelompok | Rata-rata 2025 | Rata-rata 2026 | Perubahan | Puncak |
 |---|---|---|---|---|
-| Beras | 15.515 | 15.983 | **+3,0%** | 16.367 (13 Okt 2026) |
-| Daging Sapi | 136.093 | 144.214 | **+6,0%** | 148.600 (13 Okt 2026) |
-| Minyak Goreng | 20.753 | 22.146 | **+6,7%** | 22.850 (13 Okt 2026) |
-| Gula Pasir | 19.086 | 19.539 | **+2,4%** | 19.950 (13 Okt 2026) |
+| Beras | 15.515 | 15.990 | **+3,1%** | 16.367 (13 Okt 2026) |
+| Daging Sapi | 136.093 | 144.290 | **+6,0%** | 148.600 (13 Okt 2026) |
+| Minyak Goreng | 20.753 | 22.158 | **+6,8%** | 22.850 (13 Okt 2026) |
+| Gula Pasir | 19.086 | 19.547 | **+2,4%** | 20.000 (21 Okt 2026) |
 
-- **Minyak goreng naik paling tinggi** (+6,7% YoY) dan **paling volatil** (CV 4,3%, dipimpin Minyak Goreng Curah yang melonjak ke Rp20.750 pada 4 Jun 2026). Gula Pasir paling stabil (CV 1,3–2,1%).
-- **Lonjakan serentak medio Oktober 2026**: keempat kelompok mencapai titik tertinggi pada 13–14 Okt 2026 — pola yang sama terlihat pada proyek Harga Cabai (puncak 12 Okt 2026), mengindikasikan tekanan harga pangan luas, bukan komoditas tunggal.
-- **Disparitas antarprovinsi 36–41%**: Beras termurah NTB (Rp13.622) vs termahal Kalimantan Tengah (Rp19.094), selisih 40,2%; Daging Sapi NTT (Rp117.522) vs Kalimantan Selatan (Rp165.463), selisih 40,8%; Minyak Goreng Kepulauan Riau vs Gorontalo (36,3%); Gula Pasir Sulawesi Selatan vs Papua (37,1%).
+- **Minyak goreng naik paling tinggi** (+6,8% YoY) dan **paling volatil** (CV 4,3%, dipimpin Minyak Goreng Curah yang melonjak ke Rp20.750 pada 4 Jun 2026). Gula Pasir paling stabil (CV 1,3–2,2%).
+- **Lonjakan serentak medio Oktober 2026**: tiga kelompok mencapai titik tertinggi pada 13–14 Okt 2026 dan Gula Pasir menyusul tipis melampauinya pada 21 Okt 2026 — pola yang sama terlihat pada proyek Harga Cabai (puncak 12 Okt 2026), mengindikasikan tekanan harga pangan luas, bukan komoditas tunggal.
+- **Disparitas antarprovinsi 36–41%**: Beras termurah NTB (Rp13.621) vs termahal Kalimantan Tengah (Rp19.114), selisih 40,3%; Daging Sapi NTT (Rp117.569) vs Kalimantan Selatan (Rp165.541), selisih 40,8%; Minyak Goreng Kepulauan Riau vs Gorontalo (36,3%); Gula Pasir Sulawesi Selatan vs Papua (36,9%).
 - **Efek Ramadan kecil**: harga beras naik tipis 0,2–0,4% selama Ramadan 2025 dan 2026 dibanding 30 hari sebelumnya, lalu lanjut naik ringan sesudahnya — tidak ada spike tajam.
 
 Seluruh angka dihitung ulang dari `data/raw/*.csv`; detail per komoditas ada di `findings.json`.
