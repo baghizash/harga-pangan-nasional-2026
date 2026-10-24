@@ -4,20 +4,20 @@ Palet: teal gelap `#0E7C7B` (primer), amber `#D9A441` (aksen), slate `#3A6EA5`, 
 Font: Segoe UI / Calibri. Satu ide per halaman, judul rata kiri, angka kunci besar.
 
 ## Halaman 1 — Ringkasan Nasional
-- **KPI cards (4)**: Rata-rata Nasional 2026 + YoY % per kelompok (Beras, Daging Sapi, Minyak Goreng, Gula Pasir). Angka acuan: Beras Rp15.983 (+3,0%), Daging Sapi Rp144.214 (+6,0%), Minyak Goreng Rp22.146 (+6,7%), Gula Pasir Rp19.539 (+2,4%).
+- **KPI cards (4)**: Rata-rata Nasional 2026 + YoY % per kelompok (Beras, Daging Sapi, Minyak Goreng, Gula Pasir). Angka acuan: Beras Rp15.990 (+3,1%), Daging Sapi Rp144.290 (+6,0%), Minyak Goreng Rp22.158 (+6,8%), Gula Pasir Rp19.547 (+2,4%).
 - **Line chart**: tren harian indeks per kelompok (measure: Rata-rata Nasional; sumbu X dim_tanggal[tanggal]; legend dim_komoditas[kelompok]).
 - **Slicers**: Tahun, Kelompok. (Sumber: `fact_nasional`.)
-- Catatan kaki: "Sumber: PIHPS/BI, pasar tradisional, 1 Jan 2025 – 19 Okt 2026."
+- Catatan kaki: "Sumber: PIHPS/BI, pasar tradisional, 1 Jan 2025 – 23 Okt 2026."
 
 ## Halaman 2 — Volatilitas & Puncak
 - **Bar chart horizontal**: Volatilitas CV % Nasional per komoditas (tertinggi: Minyak Goreng Curah 4,3%; terendah: Gula Pasir Premium 1,3%).
-- **Tabel**: Komoditas | Harga Maks Nasional | Tanggal Maks Nasional. Sorot baris puncak 13–14 Okt 2026 (lonjakan serentak keempat kelompok).
+- **Tabel**: Komoditas | Harga Maks Nasional | Tanggal Maks Nasional. Sorot baris puncak medio Okt 2026 (tiga kelompok 13–14 Okt, Gula Pasir 21 Okt).
 - **Line chart kecil**: Minyak Goreng Curah vs Kemasan (kontras volatilitas curah).
 - (Sumber: `fact_nasional`.)
 
 ## Halaman 3 — Disparitas Provinsi
 - **Peta (filled map)**: Rata-rata Provinsi per provinsi, warna gradasi teal. Slicer Kelompok wajib.
-- **Bar chart**: 5 provinsi termahal vs 5 termurah (measure Peringkat Provinsi). Acuan: Beras NTB Rp13.622 vs Kalteng Rp19.094 (gap 40,2%); Daging Sapi NTT vs Kalsel (gap 40,8%).
+- **Bar chart**: 5 provinsi termahal vs 5 termurah (measure Peringkat Provinsi). Acuan: Beras NTB Rp13.621 vs Kalteng Rp19.114 (gap 40,3%); Daging Sapi NTT vs Kalsel (gap 40,8%).
 - **KPI**: Selisih Termahal vs Termurah %.
 - **Slicers**: Kelompok, Provinsi (multi-select). (Sumber: `fact_provinsi`. Jangan campur dengan halaman 1.)
 
