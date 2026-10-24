@@ -1,7 +1,7 @@
 {
   "periode": {
     "mulai": "2025-01-01",
-    "selesai": "2026-10-19",
+    "selesai": "2026-10-23",
     "sumber": "PIHPS / Bank Indonesia (API publik, pasar tradisional, harian)",
     "komoditas": 13,
     "provinsi": 34
@@ -9,8 +9,8 @@
   "kelompok": {
     "Beras": {
       "rata2025": 15515,
-      "rata2026": 15983,
-      "yoy_pct": 3.0,
+      "rata2026": 15990,
+      "yoy_pct": 3.1,
       "cv_pct": 2.1,
       "indeks_maks": 16367,
       "tgl_indeks_maks": "2026-10-13",
@@ -25,7 +25,7 @@
     },
     "Daging Sapi": {
       "rata2025": 136093,
-      "rata2026": 144214,
+      "rata2026": 144290,
       "yoy_pct": 6.0,
       "cv_pct": 3.3,
       "indeks_maks": 148600,
@@ -37,8 +37,8 @@
     },
     "Minyak Goreng": {
       "rata2025": 20753,
-      "rata2026": 22146,
-      "yoy_pct": 6.7,
+      "rata2026": 22158,
+      "yoy_pct": 6.8,
       "cv_pct": 4.0,
       "indeks_maks": 22850,
       "tgl_indeks_maks": "2026-10-13",
@@ -50,11 +50,11 @@
     },
     "Gula Pasir": {
       "rata2025": 19086,
-      "rata2026": 19539,
+      "rata2026": 19547,
       "yoy_pct": 2.4,
       "cv_pct": 1.6,
-      "indeks_maks": 19950,
-      "tgl_indeks_maks": "2026-10-13",
+      "indeks_maks": 20000,
+      "tgl_indeks_maks": "2026-10-21",
       "komoditas": [
         "com_20",
         "com_21"
@@ -64,9 +64,9 @@
   "komoditas": {
     "com_1": {
       "nama": "Beras Kualitas Bawah I",
-      "n_hari": 469,
+      "n_hari": 473,
       "rata2025": 14313,
-      "rata2026": 14627,
+      "rata2026": 14633,
       "yoy_pct": 2.2,
       "maks": 15000,
       "tgl_maks": "2026-09-22",
@@ -75,20 +75,20 @@
     },
     "com_2": {
       "nama": "Beras Kualitas Bawah II",
-      "n_hari": 469,
+      "n_hari": 473,
       "rata2025": 14145,
-      "rata2026": 14540,
+      "rata2026": 14544,
       "yoy_pct": 2.8,
       "maks": 14750,
       "tgl_maks": "2026-10-09",
       "minimum": 13600,
-      "cv_pct": 2.0
+      "cv_pct": 2.1
     },
     "com_3": {
       "nama": "Beras Kualitas Medium I",
-      "n_hari": 469,
+      "n_hari": 473,
       "rata2025": 15677,
-      "rata2026": 16222,
+      "rata2026": 16230,
       "yoy_pct": 3.5,
       "maks": 16650,
       "tgl_maks": "2026-10-01",
@@ -97,10 +97,10 @@
     },
     "com_4": {
       "nama": "Beras Kualitas Medium II",
-      "n_hari": 469,
+      "n_hari": 473,
       "rata2025": 15541,
-      "rata2026": 16043,
-      "yoy_pct": 3.2,
+      "rata2026": 16051,
+      "yoy_pct": 3.3,
       "maks": 16450,
       "tgl_maks": "2026-10-12",
       "minimum": 14950,
@@ -108,9 +108,9 @@
     },
     "com_5": {
       "nama": "Beras Kualitas Super I",
-      "n_hari": 469,
+      "n_hari": 473,
       "rata2025": 16945,
-      "rata2026": 17482,
+      "rata2026": 17492,
       "yoy_pct": 3.2,
       "maks": 18000,
       "tgl_maks": "2026-10-13",
@@ -119,10 +119,10 @@
     },
     "com_6": {
       "nama": "Beras Kualitas Super II",
-      "n_hari": 469,
+      "n_hari": 473,
       "rata2025": 16470,
-      "rata2026": 16981,
-      "yoy_pct": 3.1,
+      "rata2026": 16989,
+      "yoy_pct": 3.2,
       "maks": 17400,
       "tgl_maks": "2026-10-09",
       "minimum": 16050,
@@ -130,10 +130,10 @@
     },
     "com_8": {
       "nama": "Daging Sapi Kualitas 1",
-      "n_hari": 469,
+      "n_hari": 473,
       "rata2025": 140187,
-      "rata2026": 148502,
-      "yoy_pct": 5.9,
+      "rata2026": 148582,
+      "yoy_pct": 6.0,
       "maks": 153150,
       "tgl_maks": "2026-10-13",
       "minimum": 137050,
@@ -141,20 +141,20 @@
     },
     "com_9": {
       "nama": "Daging Sapi Kualitas 2",
-      "n_hari": 469,
+      "n_hari": 473,
       "rata2025": 131999,
-      "rata2026": 139926,
-      "yoy_pct": 6.0,
-      "maks": 144050,
-      "tgl_maks": "2026-10-13",
+      "rata2026": 139998,
+      "yoy_pct": 6.1,
+      "maks": 144100,
+      "tgl_maks": "2026-10-21",
       "minimum": 128650,
       "cv_pct": 3.3
     },
     "com_17": {
       "nama": "Minyak Goreng Curah",
-      "n_hari": 469,
+      "n_hari": 473,
       "rata2025": 18664,
-      "rata2026": 20028,
+      "rata2026": 20033,
       "yoy_pct": 7.3,
       "maks": 20750,
       "tgl_maks": "2026-06-04",
@@ -163,9 +163,9 @@
     },
     "com_18": {
       "nama": "Minyak Goreng Kemasan Bermerk 1",
-      "n_hari": 469,
+      "n_hari": 473,
       "rata2025": 22301,
-      "rata2026": 23658,
+      "rata2026": 23671,
       "yoy_pct": 6.1,
       "maks": 24450,
       "tgl_maks": "2026-10-13",
@@ -174,9 +174,9 @@
     },
     "com_19": {
       "nama": "Minyak Goreng Kemasan Bermerk 2",
-      "n_hari": 469,
+      "n_hari": 473,
       "rata2025": 21293,
-      "rata2026": 22753,
+      "rata2026": 22769,
       "yoy_pct": 6.9,
       "maks": 23700,
       "tgl_maks": "2026-10-13",
@@ -185,50 +185,50 @@
     },
     "com_20": {
       "nama": "Gula Pasir Kualitas Premium",
-      "n_hari": 469,
+      "n_hari": 473,
       "rata2025": 19777,
-      "rata2026": 20160,
-      "yoy_pct": 1.9,
-      "maks": 20550,
-      "tgl_maks": "2026-10-14",
+      "rata2026": 20168,
+      "yoy_pct": 2.0,
+      "maks": 20600,
+      "tgl_maks": "2026-10-20",
       "minimum": 19350,
       "cv_pct": 1.3
     },
     "com_21": {
       "nama": "Gula Pasir Lokal",
-      "n_hari": 469,
+      "n_hari": 473,
       "rata2025": 18396,
-      "rata2026": 18917,
-      "yoy_pct": 2.8,
+      "rata2026": 18926,
+      "yoy_pct": 2.9,
       "maks": 19400,
       "tgl_maks": "2026-10-13",
       "minimum": 18000,
-      "cv_pct": 2.1
+      "cv_pct": 2.2
     }
   },
   "provinsi": {
     "Beras": {
       "termurah": {
         "provinsi": "Nusa Tenggara Barat",
-        "rata": 13622
+        "rata": 13621
       },
       "termahal": {
         "provinsi": "Kalimantan Tengah",
-        "rata": 19094
+        "rata": 19114
       },
-      "selisih_pct": 40.2,
+      "selisih_pct": 40.3,
       "top5_mahal": [
         [
           "Kalimantan Tengah",
-          19094
+          19114
         ],
         [
           "Papua",
-          19083
+          19087
         ],
         [
           "Kalimantan Selatan",
-          18760
+          18779
         ],
         [
           "Sumatera Barat",
@@ -236,194 +236,194 @@
         ],
         [
           "Maluku Utara",
-          17607
+          17609
         ]
       ],
       "top5_murah": [
         [
           "Nusa Tenggara Barat",
-          13622
+          13621
         ],
         [
           "Sulawesi Selatan",
-          14323
+          14329
         ],
         [
           "DI Yogyakarta",
-          14365
+          14373
         ],
         [
           "Sulawesi Barat",
-          14497
+          14499
         ],
         [
           "Jawa Timur",
-          14667
+          14677
         ]
       ]
     },
     "Daging Sapi": {
       "termurah": {
         "provinsi": "Nusa Tenggara Timur",
-        "rata": 117522
+        "rata": 117569
       },
       "termahal": {
         "provinsi": "Kalimantan Selatan",
-        "rata": 165463
+        "rata": 165541
       },
       "selisih_pct": 40.8,
       "top5_mahal": [
         [
           "Kalimantan Selatan",
-          165463
+          165541
         ],
         [
           "Kalimantan Timur",
-          164460
+          164512
         ],
         [
           "Papua",
-          158363
+          158390
         ],
         [
           "Kalimantan Tengah",
-          156419
+          156445
         ],
         [
           "Papua Barat",
-          155471
+          155699
         ]
       ],
       "top5_murah": [
         [
           "Nusa Tenggara Timur",
-          117522
+          117569
         ],
         [
           "Kepulauan Riau",
-          123770
+          123847
         ],
         [
           "Nusa Tenggara Barat",
-          127027
+          127124
         ],
         [
           "Riau",
-          131054
+          131089
         ],
         [
           "Jawa Timur",
-          131160
+          131331
         ]
       ]
     },
     "Minyak Goreng": {
       "termurah": {
         "provinsi": "Kepulauan Riau",
-        "rata": 19857
+        "rata": 19866
       },
       "termahal": {
         "provinsi": "Gorontalo",
-        "rata": 27056
+        "rata": 27078
       },
       "selisih_pct": 36.3,
       "top5_mahal": [
         [
           "Gorontalo",
-          27056
+          27078
         ],
         [
           "Papua",
-          25681
+          25698
         ],
         [
           "Maluku",
-          24747
+          24787
         ],
         [
           "Papua Barat",
-          24722
+          24738
         ],
         [
           "Maluku Utara",
-          23557
+          23583
         ]
       ],
       "top5_murah": [
         [
           "Kepulauan Riau",
-          19857
+          19866
         ],
         [
           "Kepulauan Bangka Belitung",
-          20134
+          20144
         ],
         [
           "Sulawesi Utara",
-          20407
+          20422
         ],
         [
           "Banten",
-          20722
+          20711
         ],
         [
           "Sulawesi Selatan",
-          20917
+          20935
         ]
       ]
     },
     "Gula Pasir": {
       "termurah": {
         "provinsi": "Sulawesi Selatan",
-        "rata": 17741
+        "rata": 17770
       },
       "termahal": {
         "provinsi": "Papua",
-        "rata": 24325
+        "rata": 24327
       },
-      "selisih_pct": 37.1,
+      "selisih_pct": 36.9,
       "top5_mahal": [
         [
           "Papua",
-          24325
+          24327
         ],
         [
           "Maluku",
-          21396
+          21402
         ],
         [
           "Papua Barat",
-          21327
+          21335
         ],
         [
           "Kalimantan Tengah",
-          20957
+          20969
         ],
         [
           "Sulawesi Tenggara",
-          20902
+          20910
         ]
       ],
       "top5_murah": [
         [
           "Sulawesi Selatan",
-          17741
+          17770
         ],
         [
           "Kepulauan Riau",
-          17786
+          17783
         ],
         [
           "Jawa Timur",
-          17833
+          17844
         ],
         [
           "DI Yogyakarta",
-          18331
+          18342
         ],
         [
           "Sulawesi Utara",
-          18421
+          18430
         ]
       ]
     }
@@ -489,7 +489,7 @@
   "lintas_komoditas": {
     "yoy_tertinggi": {
       "kelompok": "Minyak Goreng",
-      "pct": 6.7
+      "pct": 6.8
     },
     "yoy_terendah": {
       "kelompok": "Gula Pasir",
