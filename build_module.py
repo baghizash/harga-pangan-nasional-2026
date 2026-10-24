@@ -112,7 +112,7 @@ P("Modul ini mengajak kamu membangun satu project analisis data nyata dari nol: 
   "Semua angka di modul ini dihitung dari data — tidak ada yang dikarang.", "coversub")
 story.append(Spacer(1, 0.5 * cm))
 P("Sumber data: API publik PIHPS / Bank Indonesia (bi.go.id/hargapangan), Pasar Tradisional. "
-  "Periode: 1 Jan 2025 – 19 Okt 2026. 13 komoditas, 34 provinsi.", "warn")
+  "Periode: 1 Jan 2025 – 23 Okt 2026. 13 komoditas, 34 provinsi.", "warn")
 story.append(PageBreak())
 
 # ---------- BAB 1 ----------
@@ -145,7 +145,7 @@ CODE("GET https://www.bi.go.id/hargapangan/WebSite/TabelHarga/GetGridDataKomodit
      "&comcat_id=1             # id komoditas daun (1 s.d. 21)\n"
      "&province_id=1           # id provinsi (satu per request)\n"
      "&tipe_laporan=1          # 1 = harian\n"
-     "&start_date=2025-01-01&end_date=2026-10-19")
+     "&start_date=2025-01-01&end_date=2026-10-23")
 P("Satu request = satu komoditas × satu provinsi. Responsnya berisi dua baris: "
   "baris nasional dan baris provinsi, dengan satu kolom per tanggal (DD/MM/YYYY). "
   "Nilai \"-\" artinya hari itu tidak ada laporan. Total: 13 komoditas × 34 provinsi "
@@ -179,8 +179,8 @@ P("Dengan model ini, measure DAX tidak butuh guard khusus: satu visual selalu "
   "membaca tepat satu grain. Folder powerbi/ berisi kelima tabel sebagai CSV "
   "siap import.", "body")
 P("Skala data", "h2")
-B("6.097 baris nasional + 203.077 baris provinsi.")
-B("469 hari laporan (1 Jan 2025 – 19 Okt 2026), 13 komoditas, 34 provinsi.")
+B("6.149 baris nasional + 204.809 baris provinsi.")
+B("473 hari laporan (1 Jan 2025 – 23 Okt 2026), 13 komoditas, 34 provinsi.")
 B("Database verifikasi: data/harga_pangan.db (star schema). "
   "Semua temuan dihitung ulang dari database ini dengan SQL — bukan dari cache.")
 story.append(PageBreak())
@@ -216,10 +216,11 @@ CHART("01_tren_nasional.png", "Tren harian indeks per kelompok, 2025–2026.")
 P("Minyak goreng naik tertinggi dan paling liar.", "h2")
 CHART("02_yoy_kelompok.png", "Kenaikan rata-rata 2026 vs 2025 per kelompok.")
 CHART("03_volatilitas.png", "Koefisien variasi 2026 per komoditas.")
-P("Puncak serentak 13 Oktober 2026 — keempat kelompok mencapai titik tertinggi "
-  "pada 13–14 Oktober 2026, pola yang sama dengan lonjakan cabai (12 Okt 2026). "
+P("Puncak serentak medio Oktober 2026 — tiga kelompok mencapai titik tertinggi "
+  "pada 13–14 Oktober 2026 dan Gula Pasir menyusul tipis melampauinya pada "
+  "21 Oktober 2026, pola yang sama dengan lonjakan cabai (12 Okt 2026). "
   "Ini sinyal tekanan harga pangan luas, bukan ulah satu komoditas.", "body")
-CHART("04_puncak.png", "Harga harian 2026 dengan garis puncak 13 Okt.")
+CHART("04_puncak.png", "Titik tertinggi indeks per kelompok, 2025–2026.")
 story.append(PageBreak())
 
 # ---------- BAB 6 ----------
@@ -270,8 +271,8 @@ story.append(PageBreak())
 # ---------- PENUTUP ----------
 P("Penutup", "h1")
 P("Tiga pesan utama project ini:", "body")
-B("1. Minyak goreng naik tertinggi (+6,7%) dan paling volatile — pantau versi curah.")
-B("2. 13 Oktober 2026 adalah puncak tekanan harga pangan nasional 2026.")
+B("1. Minyak goreng naik tertinggi (+6,8%) dan paling volatile — pantau versi curah.")
+B("2. Medio Oktober 2026 adalah puncak tekanan harga pangan nasional 2026 (tiga kelompok 13 Okt, Gula Pasir 21 Okt).")
 B("3. Disparitas 36–41% antarprovinsi menuntut perhatian logistik, bukan cuma produksi.")
 P("Struktur project (lihat repo GitHub):", "h2")
 B("scripts/ — fetch_pihps.py, assemble.py, analyze.py, load_to_sqlite.py")
