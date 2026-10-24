@@ -137,14 +137,14 @@ par(tf, "Beras, daging sapi, minyak goreng, gula pasir: tren, volatilitas, "
         "dan disparitas provinsi.", 17.5, INK, first=True, after=0, leading=1.2)
 tf = tb(s, M, 4.5, 6.5, 1.0)
 par(tf, "Data harian PIHPS / Bank Indonesia: 13 komoditas, 34 provinsi, "
-        "1 Januari 2025 sampai 19 Oktober 2026.", 13, INK, first=True, after=0, leading=1.25)
+        "1 Januari 2025 sampai 23 Oktober 2026.", 13, INK, first=True, after=0, leading=1.25)
 tf = tb(s, M, 6.55, 6.5, 0.5)
 par(tf, "BAGHIZ ASSHIDDIQIE ARASYA", 14, PLUM, bold=True, first=True, after=0)
 # Panel hero kanan: double-bezel plum
 bezel(s, 7.45, 0.85, 5.35, 4.55, inner=PLUM, outer=PLUM_L, pad=0.08, radius=0.2)
 tf = tb(s, 7.95, 1.35, 4.4, 3.8)
 par(tf, "KENAIKAN TERTINGGI 2026", 13, SURFACE, bold=True, first=True, after=6)
-par(tf, "+6,7%", 76, TANG, bold=True, after=4)
+par(tf, "+6,8%", 76, TANG, bold=True, after=4)
 par(tf, "Minyak Goreng", 21, WHITE, bold=True, after=6)
 par(tf, f"Rata-rata {rp(MG['rata2025'])} menjadi {rp(MG['rata2026'])} per kg, "
         "tertinggi dari empat kelompok bahan pokok.", 13.5, SURFACE, after=0, leading=1.25)
@@ -187,16 +187,16 @@ s = slide_new()
 title(s, "Data dan Metode")
 # Rel stat kiri
 rrect(s, M, 1.55, 3.6, 2.2, PLUM, radius=0.16)
-stat_block(s, 0.9, 1.82, 2.95, "203.077", "baris data provinsi dari API PIHPS",
+stat_block(s, 0.9, 1.82, 2.95, "204.809", "baris data provinsi dari API PIHPS",
            big_size=30, label_color=SURFACE)
 rrect(s, M, 3.95, 3.6, 2.2, SURFACE, radius=0.16)
-stat_block(s, 0.9, 4.22, 2.95, "6.097", "baris data nasional, disimpan terpisah "
+stat_block(s, 0.9, 4.22, 2.95, "6.149", "baris data nasional, disimpan terpisah "
            "dari level provinsi", big_size=30)
 bezel(s, 4.5, 1.55, 8.28, 4.6)
 tf = tb(s, 4.9, 1.92, 7.5, 3.95)
 bullets(tf, [
-    "Data harian API PIHPS: 1 Jan 2025 - 19 Okt 2026 (469 hari laporan), "
-    "6.097 baris nasional + 203.077 baris provinsi.",
+    "Data harian API PIHPS: 1 Jan 2025 - 23 Okt 2026 (473 hari laporan), "
+    "6.149 baris nasional + 204.809 baris provinsi.",
     "13 komoditas daun: 6 kualitas beras, 2 daging sapi, 3 minyak goreng, 2 gula pasir. "
     "API ini tidak menyediakan seri daun untuk telur/daging ayam/bawang, tidak dipakai, tidak dikarang.",
     "Level nasional dan provinsi disimpan di tabel fakta TERPISAH sejak awal "
@@ -246,8 +246,8 @@ bullets(tf, [
 ], size=15.5, gap=12)
 rrect(s, M, 5.68, 12.23, 1.02, SURFACE, radius=0.14)
 tf = tb(s, 1.05, 5.9, 11.4, 0.6)
-par(tf, "Kenaikan 2026 vs 2025:   Minyak Goreng +6,7%      Daging Sapi +6,0%      "
-        "Beras +3,0%      Gula Pasir +2,4%", 16, PLUM, bold=True, first=True, after=0)
+par(tf, "Kenaikan 2026 vs 2025:   Minyak Goreng +6,8%      Daging Sapi +6,0%      "
+        "Beras +3,1%      Gula Pasir +2,4%", 16, PLUM, bold=True, first=True, after=0)
 
 # ================= Slide 6: Volatilitas =================
 s = slide_new()
@@ -273,17 +273,18 @@ s = slide_new()
 title(s, "Puncak Serentak 13 Oktober 2026")
 tf = tb(s, M, 1.55, 7.35, 2.5)
 bullets(tf, [
-    "Keempat kelompok mencapai titik tertinggi pada 13-14 Okt 2026: "
+    "Tiga kelompok mencapai titik tertinggi pada 13-14 Okt 2026: "
     f"Beras {rp(kl['Beras']['indeks_maks'])}, Daging Sapi {rp(kl['Daging Sapi']['indeks_maks'])}, "
-    f"Minyak Goreng {rp(MG['indeks_maks'])}, Gula Pasir {rp(kl['Gula Pasir']['indeks_maks'])}.",
+    f"Minyak Goreng {rp(MG['indeks_maks'])}. Gula Pasir menyusul tipis melampaui "
+    f"puncaknya pada 21 Okt 2026: {rp(kl['Gula Pasir']['indeks_maks'])}.",
     "Pola yang sama terlihat pada proyek Harga Cabai (puncak 12 Okt 2026), "
     "ini lonjakan harga pangan luas, bukan ulah satu komoditas.",
     "Bagi pemantau kebijakan: minggu kedua Oktober 2026 adalah momen tekanan "
     "maksimum harga pangan tahun ini.",
 ], size=15, gap=11)
 rrect(s, 8.25, 1.55, 4.53, 2.42, TANG, radius=0.16)
-stat_block(s, 8.6, 1.85, 3.9, "13 Okt 2026", "keempat kelompok mencapai titik "
-           "tertingginya pada 13-14 Oktober 2026", big_color=WHITE, big_size=36,
+stat_block(s, 8.6, 1.85, 3.9, "13 Okt 2026", "tiga kelompok mencapai titik "
+           "tertingginya pada 13-14 Oktober 2026; gula pasir menyusul tipis pada 21 Oktober 2026", big_color=WHITE, big_size=36,
            label_color=WHITE)
 bezel(s, M, 4.2, 9.3, 2.85)
 s.shapes.add_picture(str(CHARTS / "04_puncak.png"), Inches(2.55), Inches(4.28),
@@ -346,8 +347,8 @@ title(s, "Penutup")
 bezel(s, M, 1.5, 7.35, 3.55)
 tf = tb(s, 0.95, 1.85, 6.6, 2.95)
 par(tf, "Tiga pesan utama", 16, PLUM, bold=True, first=True, after=8)
-par(tf, "(1) Minyak goreng naik tertinggi (+6,7%) dan paling liar, pantau curah; "
-        "(2) 13 Okt 2026 adalah puncak tekanan harga pangan nasional; "
+par(tf, "(1) Minyak goreng naik tertinggi (+6,8%) dan paling liar, pantau curah; "
+        "(2) medio Okt 2026 adalah puncak tekanan harga pangan nasional; "
         "(3) disparitas 36-41% antarprovinsi menuntut perhatian logistik, bukan cuma produksi.",
     15, INK, after=0, leading=1.25)
 rrect(s, 8.25, 1.5, 4.53, 1.68, PLUM, radius=0.16)
